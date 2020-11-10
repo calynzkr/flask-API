@@ -80,7 +80,7 @@ def nlp():
         elif funct_type == 'lower_case':
             result = lower_case(text)
         elif funct_type == 'pos_tagging':
-            result = remove_pun(text)
+            result = pos_tagging(text)
         elif funct_type == 'remove_pun':
             result = remove_pun(text)
         elif funct_type == 'all':
