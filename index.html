@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="container">
+        <form method="POST" action="/nlp">
+            <div class="form-group">
+                    <label>Enter the text you want here</label>
+                        <td><input type="text" name="text"></td>
+            <br/>
+            <select class="form-control" name="functiontype">
+			  <option selected>Select Function you want to call</option>
+			  <option value="count">Count</option>
+			  <option value="sent">Sent</option>
+			  <option value="tokenize">Tokenize</option>
+              		  <option value="freq">Freq</option>
+			  <option value="remove">Remove stopwords</option>
+			  <option value="lower_case">Lower case</option>
+			  <option value="pos_tagging">Pos_tagging</option>
+			  <option value="remove_pun">Remove punctuation</option>
+              <option value="all">All</option>
+			</select>
+			<br/>
+            <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+
+        </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <p>Result</p>
+        <p>{{result}}</p>
+    	</div>
+    <p>
+				<td>Given by Group 3.</td>
+    </p>
+  <p>
+    <td>Qiuchen Ma,</td>
+    <td>Pengfei Liu,</td>
+    <td>Yuyang Fei,</td>
+    <td>Kairu Zhang.</td>
+  </p>
+</body>
+</html>
